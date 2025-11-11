@@ -1,4 +1,3 @@
-# sync_reader.py
 from utils import get_txt_files, timed
 
 

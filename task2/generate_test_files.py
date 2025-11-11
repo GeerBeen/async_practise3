@@ -139,4 +139,4 @@ def generate_files(dir_: str):
 
 
 if __name__ == "__main__":
-    generate_files()
+    generate_files("data")

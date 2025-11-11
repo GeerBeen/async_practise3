@@ -1,4 +1,3 @@
-# work_stealing_files.py
 from concurrent.futures import ThreadPoolExecutor
 from utils import get_txt_files, count_chars_in_file, timed
 import os
