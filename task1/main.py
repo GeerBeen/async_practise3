@@ -48,7 +48,7 @@ def main():
 
     # Work Sync
     print("3. Work Sync (Чистий numpy)")
-    result_wsn, time_wsn = run_work_dealing(arr, target)
+    result_wsn, time_wsn = work_sync(arr, target)
     print(f"   Результат: {result_wsn or 'не знайдено'}")
     print(f"   Час: {time_wsn:.4f} сек\n")
 
