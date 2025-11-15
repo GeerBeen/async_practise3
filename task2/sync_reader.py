@@ -1,16 +1,10 @@
-from utils import get_txt_files, timed
+from utils import get_txt_files, timed, count_chars_in_file
 
 
 @timed
 def process_sync(directory: str):
     files = get_txt_files(directory)
-    results = []
-    for f in files:
-        try:
-            content = f.read_text(encoding='utf-8', errors='ignore')
-            results.append((f.name, len(content)))
-        except Exception:
-            results.append((f.name, 0))
+    results = [count_chars_in_file(f) for f in files]
     return results
 
 
